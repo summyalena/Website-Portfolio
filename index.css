@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&family=Roboto:wght@300;700&family=Smooch+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('fonts/InaiMathi.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 120vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.body {
+  background-color: #1c1a19;
+  width: 100vw;
+  height: 120vh;
+  overflow: hidden;
+}
+
+#header {
+  background-color: #3c3a39;
+  height: 13vh;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.wrapp {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 20px;
+  color: #fff;
+  width: 170px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.hamburger {
+  margin-right: 40px;
+  margin-top: 5px;
+}
+
+.main {
+  width: 100vw;
+  height: 87vh;
+}
+
+.mainwrap {
+  display: flex;
+  position: absolute;
+  height: 120%;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 110px 24px;
+  gap: 12px;
+}
+
+.heading {
+  width: 327px;
+  height: 124px;
+  font-family: 'Crete Round', serif;
+  line-height: 64px;
+  order: 0;
+  font-weight: 400;
+  letter-spacing: 0.37px;
+  font-size: 50px;
+  color: #ff6b00;
+}
+
+.mid {
+  width: 327px;
+  height: 20px;
+  line-height: 32px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 136px;
+  font-style: normal;
+  font-weight: 700;
+  flex-grow: 0;
+  order: 1;
+  font-size: 24px;
+  color: #fff5e1;
+}
+
+.para {
+  width: 308px;
+  height: 123px;
+  margin-bottom: 19px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  order: 2;
+  flex-grow: 0;
+  font-size: 16px;
+  font-family: 'Poppins', serif;
+  color: #fff;
+}
+
+.sociallinks {
+  display: flex;
+  gap: 20px;
+  order: 3;
+  width: 200px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.sociallinks li {
+  list-style: none;
+}
+
+.ill {
+  position: absolute;
+  left: 58.5%;
+  top: 33%;
+}
