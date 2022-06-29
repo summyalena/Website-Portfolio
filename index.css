@@ -87,7 +87,7 @@ body {
   order: 0;
   font-weight: 400;
   letter-spacing: 0.37px;
-  font-size: 56px;
+  font-size: 50px;
   color: #ff6b00;
 }
 
@@ -134,6 +134,6 @@ body {
 
 .ill {
   position: absolute;
-  left: 63.5%;
-  top: 39%;
+  left: 58.5%;
+  top: 33%;
 }
