@@ -344,7 +344,7 @@ body {
 }
 
 .spancon {
-  display: flex;
+  display: grid;
   height: 40px;
   margin: 14px 0 0 0;
   width: 100%;
