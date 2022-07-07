@@ -344,7 +344,7 @@ body {
 }
 
 .spancon {
-  display: flex;
+  display: grid;
   height: 40px;
   margin: 14px 0 0 0;
   width: 100%;
@@ -501,17 +501,20 @@ body {
   font-size: 500;
   background-color: rgb(250, 207, 127);
   cursor: pointer;
+  border: solid 1px rgb(245, 88, 0);
 }
 
-.resume:focus {
+/* .resume:focus {
   color: white;
   font-weight: 700;
   border: none;
   cursor: pointer;
-}
+} */
 
 .resume:active {
   cursor: pointer;
+  background: rgb(224, 83, 4);
+  color: rgb(244, 241, 240);
 }
 
 .resume:disabled,
@@ -596,4 +599,94 @@ body {
   align-items: center;
   width: 100%;
   justify-content: center;
+}
+
+.section {
+  position: relative;
+  top: 5700px;
+  z-index: 100;
+  height: 200px;
+}
+
+.contact-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1px 24px;
+  text-align: center;
+}
+
+.contact-text {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.input {
+  border: none;
+  border-bottom: solid 1px rgb(219, 216, 215);
+  width: 100%;
+  height: 40px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(151, 148, 147);
+}
+
+.area {
+  margin-top: 30px;
+  width: 90%;
+  height: 100px;
+  padding: 12px;
+  background: rgb(251, 248, 247);
+  color: rgb(60, 58, 57);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+}
+
+.btn-mid {
+  margin-top: 24px;
+  align-self: center;
+}
+
+#footer {
+  position: relative;
+  top: 6200px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: solid 2px rgb(223, 225, 230);
+}
+
+.footer-icon {
+  color: rgb(80, 95, 121);
+  padding-top: 30px;
+}
+
+.last-div {
+  width: 134px;
+  height: 5px;
+  background: rgb(13, 21, 30);
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.sociallinks-footer {
+  list-style: none;
+  display: flex;
+}
+
+.sociallinks-footer li {
+  margin-right: 20px;
 }
