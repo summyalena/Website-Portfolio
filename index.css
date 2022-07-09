@@ -1748,7 +1748,12 @@ body {
     width: 100vw;
     justify-content: left;
     padding: 1px 24px;
+    transform: translate(10px);
     text-align: left;
+  }
+
+  .contact-text-container:hover {
+    transition: all ease-in 1s;
   }
 
   #aboutme {
