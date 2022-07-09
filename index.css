@@ -48,10 +48,10 @@ body {
 .logo {
   margin-left: 20px;
   color: #fff;
-  animation: 1s ease-out 0s 1 logo;
   width: 170px;
   font-family: "Roboto", sans-serif;
   line-height: 24px;
+  animation: 1s ease-in-out 0s 1 logo;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -59,11 +59,11 @@ body {
 
 @keyframes logo {
   0% {
-    transform: translateX(-100%);
+    transform: translateY(-100%);
   }
   /* stylelint-disable-next-line rule-empty-line-before */
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -1161,7 +1161,12 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
+  transition: all ease-in 0.2s;
   line-height: 44px;
+}
+
+.contact-text:hover {
+  transform: translate(10px 0);
 }
 
 .input {
@@ -1255,11 +1260,22 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
+    animation: 1s ease-in 0s 1 logo;
     display: flex;
     margin-left: 154px;
     align-items: center;
     text-align: center;
     color: #fff;
+  }
+
+  @keyframes logo {
+    0% {
+      transform: translateY(-100%);
+    }
+    /* stylelint-disable-next-line rule-empty-line-before */
+    100% {
+      transform: translateY(0);
+    }
   }
 
   .wrapp {
@@ -1790,8 +1806,8 @@ body {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    display: flex;
     transition: all ease-in 0.2s;
+    display: flex;
     align-items: center;
     color: #262626;
   }
