@@ -284,6 +284,7 @@ body {
   padding: 10px;
   height: 48px;
   color: #fff;
+  transition: all 0.4s;
 }
 
 .project:hover {
@@ -316,6 +317,11 @@ body {
   background-color: blue;
   height: 386px;
   background-repeat: no-repeat;
+  transition: all 0.3s;
+}
+
+.cardwork1:hover {
+  transform: scale(1.03);
 }
 
 .cardwork2 {
@@ -325,6 +331,11 @@ body {
   background-color: blue;
   height: 386px;
   background-repeat: no-repeat;
+  transition: all 0.3s;
+}
+
+.cardwork2:hover {
+  transform: scale(1.03);
 }
 
 .cardwork3 {
@@ -334,6 +345,11 @@ body {
   background-color: blue;
   height: 386px;
   background-repeat: no-repeat;
+  transition: all 0.3s;
+}
+
+.cardwork3:hover {
+  transform: scale(1.03);
 }
 
 .cardwork4 {
@@ -343,6 +359,11 @@ body {
   background-color: blue;
   height: 386px;
   background-repeat: no-repeat;
+  transition: all 0.3s;
+}
+
+.cardwork4:hover {
+  transform: scale(1.03);
 }
 
 .cardwork5 {
@@ -352,6 +373,11 @@ body {
   background-color: blue;
   height: 386px;
   background-repeat: no-repeat;
+  transition: all 0.3s;
+}
+
+.cardwork5:hover {
+  transform: scale(1.03);
 }
 
 .cardwork6 {
@@ -361,6 +387,11 @@ body {
   background-color: blue;
   height: 386px;
   background-repeat: no-repeat;
+  transition: all 0.3s;
+}
+
+.cardwork6:hover {
+  transform: scale(1.03);
 }
 
 .cardcon {
@@ -563,6 +594,10 @@ body {
   font-size: 15px;
   line-height: 20px;
   background: rgba(255, 255, 255, 0.24);
+}
+
+.button {
+  transition: all .2s;
 }
 
 .cardwork1 .button {
@@ -1031,6 +1066,13 @@ body {
   cursor: pointer;
   border: solid 1px rgb(245, 88, 0);
 }
+
+.project:hover {
+  background-color: #bd5002;
+  padding: 10px;
+  color: #f4f5f7;
+}
+
 
 .resume:focus {
   color: white;
