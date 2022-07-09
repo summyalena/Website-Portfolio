@@ -51,9 +51,20 @@ body {
   width: 170px;
   font-family: "Roboto", sans-serif;
   line-height: 24px;
+  animation: 1s ease-in-out 0s 1 logo;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
+}
+
+@keyframes logo {
+  0% {
+    transform: translateY(-100%);
+  }
+  /* stylelint-disable-next-line rule-empty-line-before */
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .hamburger {
@@ -284,7 +295,7 @@ body {
   padding: 10px;
   height: 48px;
   color: #fff;
-  transition: all 0.4s;
+  transition: all 0.3s ease;
 }
 
 .project:hover {
@@ -317,11 +328,6 @@ body {
   background-color: blue;
   height: 386px;
   background-repeat: no-repeat;
-  transition: all 0.3s;
-}
-
-.cardwork1:hover {
-  transform: scale(1.03);
 }
 
 .cardwork2 {
@@ -331,11 +337,6 @@ body {
   background-color: blue;
   height: 386px;
   background-repeat: no-repeat;
-  transition: all 0.3s;
-}
-
-.cardwork2:hover {
-  transform: scale(1.03);
 }
 
 .cardwork3 {
@@ -345,11 +346,6 @@ body {
   background-color: blue;
   height: 386px;
   background-repeat: no-repeat;
-  transition: all 0.3s;
-}
-
-.cardwork3:hover {
-  transform: scale(1.03);
 }
 
 .cardwork4 {
@@ -359,11 +355,6 @@ body {
   background-color: blue;
   height: 386px;
   background-repeat: no-repeat;
-  transition: all 0.3s;
-}
-
-.cardwork4:hover {
-  transform: scale(1.03);
 }
 
 .cardwork5 {
@@ -373,11 +364,6 @@ body {
   background-color: blue;
   height: 386px;
   background-repeat: no-repeat;
-  transition: all 0.3s;
-}
-
-.cardwork5:hover {
-  transform: scale(1.03);
 }
 
 .cardwork6 {
@@ -387,11 +373,6 @@ body {
   background-color: blue;
   height: 386px;
   background-repeat: no-repeat;
-  transition: all 0.3s;
-}
-
-.cardwork6:hover {
-  transform: scale(1.03);
 }
 
 .cardcon {
@@ -594,10 +575,6 @@ body {
   font-size: 15px;
   line-height: 20px;
   background: rgba(255, 255, 255, 0.24);
-}
-
-.button {
-  transition: all 0.2s;
 }
 
 .cardwork1 .button {
@@ -1057,6 +1034,7 @@ body {
   gap: 10px;
   width: 169px;
   height: 48px;
+  transition: all 0.3s;
 }
 
 .resume:hover {
@@ -1185,7 +1163,12 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
+  transition: all ease-in 0.2s;
   line-height: 44px;
+}
+
+.contact-text:hover {
+  transform: translate(10px 0);
 }
 
 .input {
@@ -1279,11 +1262,22 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
+    animation: 1s ease-in 0s 1 logo;
     display: flex;
     margin-left: 154px;
     align-items: center;
     text-align: center;
     color: #fff;
+  }
+
+  @keyframes logo {
+    0% {
+      transform: translateY(-100%);
+    }
+    /* stylelint-disable-next-line rule-empty-line-before */
+    100% {
+      transform: translateY(0);
+    }
   }
 
   .wrapp {
@@ -1554,6 +1548,11 @@ body {
     background-size: cover;
     height: 520px;
     background-repeat: no-repeat;
+    transition: all 0.3s ease;
+  }
+
+  .cardwork1:hover {
+    transform: scale(1.03);
   }
 
   .cardcon {
@@ -1577,6 +1576,11 @@ body {
     background-size: cover;
     height: 520px;
     background-repeat: no-repeat;
+    transition: all 0.3s ease;
+  }
+
+  .cardwork2:hover {
+    transform: scale(1.03);
   }
 
   .cardwork3 {
@@ -1585,6 +1589,11 @@ body {
     background-size: cover;
     height: 520px;
     background-repeat: no-repeat;
+    transition: all 0.3s ease;
+  }
+
+  .cardwork3:hover {
+    transform: scale(1.03);
   }
 
   .cardwork4 {
@@ -1593,6 +1602,11 @@ body {
     background-size: cover;
     height: 520px;
     background-repeat: no-repeat;
+    transition: all 0.3s ease;
+  }
+
+  .cardwork4:hover {
+    transform: scale(1.03);
   }
 
   .cardwork5 {
@@ -1601,6 +1615,11 @@ body {
     background-size: cover;
     height: 520px;
     background-repeat: no-repeat;
+    transition: all 0.3s ease;
+  }
+
+  .cardwork5:hover {
+    transform: scale(1.03);
   }
 
   .cardwork6 {
@@ -1609,6 +1628,11 @@ body {
     background-size: cover;
     height: 520px;
     background-repeat: no-repeat;
+    transition: all 0.3s ease;
+  }
+
+  .cardwork6:hover {
+    transform: scale(1.03);
   }
 
   .cardwork1 .button {
@@ -1814,9 +1838,14 @@ body {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
+    transition: all ease-in 0.2s;
     display: flex;
     align-items: center;
     color: #262626;
+  }
+
+  .contact-text:hover {
+    transform: translate(10px);
   }
 
   .textarea {
