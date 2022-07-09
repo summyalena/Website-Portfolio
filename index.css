@@ -48,12 +48,23 @@ body {
 .logo {
   margin-left: 20px;
   color: #fff;
+  animation: 1s ease-out 0s 1 logo;
   width: 170px;
   font-family: "Roboto", sans-serif;
   line-height: 24px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
+}
+
+@keyframes logo {
+  0% {
+    transform: translateX(-100%);
+  }
+  /* stylelint-disable-next-line rule-empty-line-before */
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .hamburger {
@@ -1748,12 +1759,7 @@ body {
     width: 100vw;
     justify-content: left;
     padding: 1px 24px;
-    transform: translate(10px);
     text-align: left;
-  }
-
-  .contact-text-container:hover {
-    transition: all ease-in 1s;
   }
 
   #aboutme {
@@ -1785,8 +1791,13 @@ body {
     font-size: 40px;
     line-height: 52px;
     display: flex;
+    transition: all ease-in 0.2s;
     align-items: center;
     color: #262626;
+  }
+
+  .contact-text:hover {
+    transform: translate(10px);
   }
 
   .textarea {
