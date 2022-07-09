@@ -295,6 +295,7 @@ body {
   padding: 10px;
   height: 48px;
   color: #fff;
+  transition: all .3s ease;
 }
 
 .project:hover {
@@ -952,6 +953,12 @@ body {
   flex-direction: column;
 }
 
+.project:hover {
+  background-color: #bd5002;
+  padding: 10px;
+  color: #f4f5f7;
+}
+
 .cardDesk1 {
   display: none;
 }
@@ -1033,6 +1040,7 @@ body {
   gap: 10px;
   width: 169px;
   height: 48px;
+  transition: all .3s;
 }
 
 .resume:hover {
@@ -1546,6 +1554,11 @@ body {
     background-size: cover;
     height: 520px;
     background-repeat: no-repeat;
+    transition: all .3s ease;
+  }
+
+  .cardwork1:hover {
+    transform: scale(1.03);
   }
 
   .cardcon {
@@ -1569,6 +1582,11 @@ body {
     background-size: cover;
     height: 520px;
     background-repeat: no-repeat;
+    transition: all .3s ease;
+  }
+
+  .cardwork2:hover {
+    transform: scale(1.03);
   }
 
   .cardwork3 {
@@ -1577,6 +1595,11 @@ body {
     background-size: cover;
     height: 520px;
     background-repeat: no-repeat;
+    transition: all .3s ease;
+  }
+
+  .cardwork3:hover {
+    transform: scale(1.03);
   }
 
   .cardwork4 {
@@ -1585,6 +1608,11 @@ body {
     background-size: cover;
     height: 520px;
     background-repeat: no-repeat;
+    transition: all .3s ease;
+  }
+
+  .cardwork4:hover {
+    transform: scale(1.03);
   }
 
   .cardwork5 {
@@ -1593,6 +1621,11 @@ body {
     background-size: cover;
     height: 520px;
     background-repeat: no-repeat;
+    transition: all .3s ease;
+  }
+
+  .cardwork5:hover {
+    transform: scale(1.03);
   }
 
   .cardwork6 {
@@ -1601,6 +1634,11 @@ body {
     background-size: cover;
     height: 520px;
     background-repeat: no-repeat;
+    transition: all .3s ease;
+  }
+
+  .cardwork6:hover {
+    transform: scale(1.03);
   }
 
   .cardwork1 .button {
