@@ -11,15 +11,15 @@
 }
 
 body {
-  width: 100%;
-  height: 120vh;
+  width: 100vw;
+  height: auto;
   overflow-x: hidden;
 }
 
 .body {
   background-color: #1c1a19;
   width: 100vw;
-  height: 120vh;
+  height: auto;
 }
 
 #header {
@@ -79,12 +79,17 @@ body {
 
 .mainwrap {
   display: flex;
-  position: absolute;
   height: 120%;
-  width: 100%;
+  width: 90vw;
   flex-direction: column;
   align-items: flex-start;
-  padding: 110px 24px;
+  background-image: url("./images/fits.png");
+  background-position: right;
+  background-size: 40%;
+  background-position-x: auto;
+  background-position-y: 20%;
+  padding: 110px 20px;
+  background-repeat: no-repeat;
   gap: 12px;
 }
 
@@ -144,12 +149,6 @@ body {
 
 .sociallinks li {
   list-style: none;
-}
-
-.ill {
-  position: absolute;
-  left: 58.5%;
-  top: 33%;
 }
 
 #works {
@@ -992,6 +991,11 @@ body {
   align-items: flex-start;
   padding: 50px 24px;
   gap: 20px;
+  background-image: url("./images/fits2.png");
+  background-size: 40%;
+  background-position: right;
+  background-position-y: 24%;
+  background-repeat: no-repeat;
   flex-direction: column;
   height: 100vh;
 }
@@ -1008,7 +1012,7 @@ body {
 }
 
 .abtpara {
-  width: 98%;
+  width: 86%;
   height: 148px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -1065,11 +1069,11 @@ body {
   font-weight: 500;
 }
 
-.ill2 {
+/* .ill2 {
   position: absolute;
   left: 56%;
   top: 19.5%;
-}
+} */
 
 .border2 {
   border: 1px solid #fff;
@@ -1713,15 +1717,16 @@ body {
 
   .aboutwrap {
     display: flex;
-    margin-top: 130px;
+    margin-top: 90px;
     background-image: url("./images/group2.png");
     background-repeat: no-repeat;
-    background-size: 672px;
+    background-size: 500px;
     justify-content: center;
     background-position: right;
     background-position-y: 0.13%;
     padding: 0 24px;
     gap: 20px;
+    width: auto;
     height: 100vh;
   }
 
@@ -1740,7 +1745,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 130px 0;
+    padding: 130px 10px;
     gap: 24px;
     position: absolute;
     width: 566px;
