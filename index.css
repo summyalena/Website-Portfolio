@@ -74,7 +74,7 @@ body {
 
 .main {
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
 }
 
 .mainwrap {
@@ -152,11 +152,9 @@ body {
 
 #works {
   width: 100vw;
-  /* stylelint-disable-next-line comment-empty-line-before */
-  /* background-color: #fff; */
+  background-color: #fff;
   position: absolute;
   gap: 50px;
-  background-color: blue;
   top: 782px;
   height: 3455px;
 }
@@ -200,7 +198,6 @@ body {
   width: 85vw;
   margin: auto;
   height: 237px;
-  background-color: blue;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -325,7 +322,6 @@ body {
   background-image: url("images/image.png");
   width: 327px;
   background-size: cover;
-  background-color: blue;
   height: 386px;
   background-repeat: no-repeat;
 }
@@ -334,7 +330,6 @@ body {
   background-image: url("images/image.png");
   width: 327px;
   background-size: cover;
-  background-color: blue;
   height: 386px;
   background-repeat: no-repeat;
 }
@@ -999,7 +994,7 @@ body {
   background-position-y: 50%;
   background-repeat: no-repeat;
   flex-direction: column;
-  height: 100vh;
+  height: 80vh;
 }
 
 .abouthead {
