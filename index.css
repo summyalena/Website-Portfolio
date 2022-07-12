@@ -74,21 +74,20 @@ body {
 
 .main {
   width: 100vw;
-  height: 87vh;
+  height: 100vh;
 }
 
 .mainwrap {
   display: flex;
-  height: 120%;
+  height: 100%;
   width: 90vw;
   flex-direction: column;
   align-items: flex-start;
   background-image: url("./images/fits.png");
-  background-position: right;
+  background-position-x: right;
   background-size: 40%;
-  background-position-x: auto;
-  background-position-y: 20%;
-  padding: 110px 20px;
+  background-position-y: 25%;
+  padding: 110px 15px;
   background-repeat: no-repeat;
   gap: 12px;
 }
@@ -105,7 +104,7 @@ body {
   order: 0;
   font-weight: 400;
   letter-spacing: 0.37px;
-  font-size: 50px;
+  font-size: 40px;
   color: #ff6b00;
 }
 
@@ -153,9 +152,11 @@ body {
 
 #works {
   width: 100vw;
-  background-color: #fff;
+  /* stylelint-disable-next-line comment-empty-line-before */
+  /* background-color: #fff; */
   position: absolute;
   gap: 50px;
+  background-color: blue;
   top: 782px;
   height: 3455px;
 }
@@ -554,7 +555,8 @@ body {
 }
 
 .spancon {
-  display: grid;
+  display: flex;
+  flex-direction: row;
   height: 40px;
   margin: 14px 0 0 0;
   width: 100%;
@@ -994,7 +996,7 @@ body {
   background-image: url("./images/fits2.png");
   background-size: 40%;
   background-position: right;
-  background-position-y: 24%;
+  background-position-y: 50%;
   background-repeat: no-repeat;
   flex-direction: column;
   height: 100vh;
@@ -1151,7 +1153,8 @@ body {
   position: relative;
   top: 5700px;
   z-index: 100;
-  height: 200px;
+  background-color: blue;
+  height: 100vh;
 }
 
 .contact-text-container {
@@ -1210,7 +1213,7 @@ body {
 
 #footer {
   position: relative;
-  top: 6200px;
+  top: 5700px;
   height: 90px;
   display: flex;
   flex-direction: column;
