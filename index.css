@@ -253,7 +253,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  width: 100%;
+  width: 80%;
   margin-left: 36px;
   justify-content: flex-start;
   gap: 10px;
@@ -999,7 +999,7 @@ body {
 
 .abouthead {
   color: #ff6b00;
-  width: 100vw;
+  width: 80%;
   height: 79px;
   font-family: "Crete Round", serif;
   font-style: normal;
