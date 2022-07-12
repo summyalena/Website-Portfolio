@@ -8,6 +8,8 @@ This is a portfolio website that gives a detailed information about who I am and
 
 - Major languages: HTML, CSS 
 
+##live demo link
+- https://summyalena.github.io/Website-Portfolio/
 
 ## Getting Started
 To get a local copy and running follow these simple example steps.
