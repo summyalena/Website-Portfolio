@@ -115,16 +115,16 @@ body {
   transition: 0.4s;
 }
 
-.mobile-nav.is-active{
+.mobile-nav.is-active {
   left: 0;
 }
 
-.hamburger-close{
+.hamburger-close {
   display: none;
   transition: 0.4s;
 }
 
-.hamburger-close.is-active{
+.hamburger-close.is-active {
   display: block;
   z-index: 100;
   position: fixed;
