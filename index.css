@@ -96,6 +96,39 @@ body {
   display: none;
 }
 
+.mobile-nav {
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 60px 20px;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.mobile-nav ul {
+  width: 80%;
+}
+
+.mobile-nav li {
+  font-family: "Inter", sans-serif;
+  color: #fff5e1;
+  list-style: none;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 10px;
+  border-bottom: 1px solid #6f6c6b;
+}
+
+.mobile-nav li a {
+  text-decoration: none;
+  color: #fff5e1;
+}
+
 .heading {
   width: 327px;
   height: 124px;
@@ -1402,6 +1435,10 @@ body {
     gap: 19px;
     display: flex;
     margin-right: 194px;
+  }
+
+  .mobile-nav {
+    display: none;
   }
 
   .langbody li {
