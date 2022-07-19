@@ -307,7 +307,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  width: 80%;
+  width: 100%;
   margin-left: 36px;
   justify-content: flex-start;
   gap: 10px;
@@ -1053,11 +1053,11 @@ body {
 
 .abouthead {
   color: #ff6b00;
-  width: 80%;
+  width: 100%;
   height: 79px;
   font-family: "Crete Round", serif;
   font-style: normal;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 88px;
   letter-spacing: 0.37px;
 }
