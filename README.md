@@ -6,7 +6,7 @@ This is a portfolio website that gives a detailed information about who I am and
 
 ## Built With
 
-- Major languages: HTML, CSS 
+- Major languages: HTML, CSS, JS
 
 ##live demo link
 - https://summyalena.github.io/Website-Portfolio/
