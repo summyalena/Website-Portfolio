@@ -633,6 +633,15 @@ body {
     line-height: 20px;
     background: rgba(255, 255, 255, 0.24);
   }
+  
+  .button a {
+   text-decoration: none;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+
 
   .cardwork1 .button {
     width: 100%;
@@ -1034,6 +1043,10 @@ body {
     display: none;
   }
 
+  .cardWorkPop-active{
+   
+  }
+
   #aboutme {
     background-color: #1c1a19;
     position: absolute;
@@ -1053,7 +1066,7 @@ body {
     background-image: url("./images/fits2.png");
     background-size: 40%;
     background-position-x: right;
-    background-position-y: 40%;
+    background-position-y: 104%;
     background-repeat: no-repeat;
     flex-direction: column;
     height: 60vh;
@@ -1209,7 +1222,7 @@ body {
     position: relative;
     top: 5500px;
     z-index: 100;
-    height: 70vh;
+    height: 100vh;
   }
 
   .contact-text-container {
@@ -1268,7 +1281,7 @@ body {
 
   #footer {
     position: relative;
-    top: 5200px;
+    top: 5500px;
     height: 90px;
     margin-top: 200px;
     display: flex;
@@ -1584,7 +1597,6 @@ body {
 
   .cardimages {
     display: flex;
-    flex-grow: 2;
     height: 100%;
     width: 100%;
     justify-content: center;
@@ -1601,6 +1613,11 @@ body {
     top: 782px;
     height: 1155px;
   }
+  
+  /* .cardwork {
+    dislay:grid;
+    grid-template-columns: 30%;
+  } */
 
   .cardworks {
     display: flex;
@@ -1765,7 +1782,7 @@ body {
     display: none;
   }
 
-  .cardflex {
+  .cardwrapper {
     display: flex;
     gap: 24px;
     justify-content: center;
