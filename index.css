@@ -156,6 +156,75 @@ body {
     color: #fff5e1;
   }
 
+  .popup-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #979493;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .popup-cardwork{
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 4%;
+  }
+
+
+  .popup-close-btn{
+    font-size: 35px;
+    font-weight: 900;
+    font-style: bold;
+
+  }
+  .popup-cardwork  h1{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: violet
+  }
+
+  .title-popup{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .popup-spancon {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .popup-spancon .popup-span{
+    border: 1px black solid;
+    padding: 10px;
+  }
+
+  .popup-image{
+    height: 60%;
+  }
+
+  .image-pop{
+    width: 100%;
+    height: 100%;
+  }
+
+  .popup-description{
+    font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+  }
+
   .heading {
     width: 327px;
     height: 124px;
@@ -278,34 +347,37 @@ body {
 
   .stories {
     display: flex;
-    width: 100%;
+    width: 80%;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    margin: 0 auto;
+    gap: 10px;
   }
 
   .storyhead {
     font-style: normal;
     font-weight: 400;
     width: 327px;
-    margin-left: 36px;
+    /* margin-left: 36px; */
     font-family: "Crete Round", serif;
     font-size: 32px;
     line-height: 44px;
     margin-top: 1px;
     color: #091e42;
+    
   }
 
   .p {
     color: #091e42;
     font-weight: 400;
     font-size: 16px;
-    margin-left: 36px;
+    /* margin-left: 36px; */
     font-family: "Inter", sans-serif;
     display: inline-flex;
     align-items: center;
     line-height: 25px;
-    width: 86%;
+    /* width: 86%; */
     height: 147px;
   }
 
@@ -314,24 +386,18 @@ body {
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
-    margin-left: 36px;
     justify-content: flex-start;
     gap: 10px;
   }
 
   .one {
     border: 1px solid #8993a4;
-    padding: 3px 5px;
+    padding: 10px 6px;
+    display: flex;
     align-items: center;
-    margin-top: 6px;
     font-family: "Inter", sans-serif;
     color: #091e42;
     font-size: 15px;
-    display: flex;
-    flex-direction: row;
-    width: 15%;
-    margin-bottom: 10px;
-    height: 30px;
     background-color: #fff;
   }
 
@@ -339,7 +405,7 @@ body {
     background-color: #ff6b00;
     display: flex;
     gap: 10px;
-    margin-left: 36px;
+    /* margin-left: 36px; */
     width: 124px;
     font-family: "Inter", sans-serif;
     font-weight: 700;
@@ -379,12 +445,13 @@ body {
   }
 
   .cardwork1 {
-    background-image: url("images/image.png");
+    background: linear-gradient(0deg, rgb(26, 26, 26) 0%, rgb(36, 36, 37) 49%, rgba(255,255,255) 100%);
     width: 327px;
     background-size: cover;
     height: 386px;
     margin-bottom: 10px;
     background-repeat: no-repeat;
+    opacity: 0.9;
   }
 
   .cardwork2 {
@@ -1019,6 +1086,11 @@ body {
     flex-direction: column;
   }
 
+  .cardwork-container{
+    background-image: url("./images/number1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
   .cardDesk1 {
     display: none;
   }
@@ -1632,6 +1704,7 @@ body {
     width: 30%;
     background-size: cover;
     height: 520px;
+    opacity: 0.5;
     background-repeat: no-repeat;
     transition: all 0.3s ease;
   }
