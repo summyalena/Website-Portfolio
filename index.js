@@ -85,7 +85,7 @@ for(const cards in cardWorks){
   if(Object.hasOwnProperty.call(cardWorks, cards)){
    const card =  cardWorks[cards]
   cardSection.innerHTML += `
-  <div class="cardimages">
+  <div class="card-images">
     <div class="cardwork-container">
       <div class=" cardwork cardwork1">
         <div class="cardcon">
@@ -122,34 +122,33 @@ popButton.forEach(popup=> {
           if (card.id == popup.id) {
             projectPopup.innerHTML = `
               <div class="popup-container">
-                <div class="popup-cardwork">
-                  <div class = "title-popup">
-                    <h1>${card.title}</h1>
-                    <div class= "popup-close-btn">&times;</div>
-                  </div>
-                  <div class="popup-spancon">
-                      <span class="popup-span">HTML</span>
-                      <span class="popup-span">CSS</span>
-                      <span class="popup-span">JAVASCRIPT</span>
-                  </div>
-                  <div class="popup-image">
-                  <img class = "image-pop" src="${card.featuredImage}" alt="images">
-                  </div>
+                <div class = "popup-container-child">
+                  <div class="popup-cardwork">
+                    <div class = "title-popup">
+                      <h1>${card.title}</h1>
+                      <div class= "popup-close-btn">&times;</div>
+                    </div>
+                    <div class="popup-spancon">
+                        <span class="popup-span">HTML</span>
+                        <span class="popup-span">CSS</span>
+                        <span class="popup-span">JAVASCRIPT</span>
+                    </div>
+                    <div class = "image-text-container">
+                      <div class="popup-image">
+                        <img class = "image-pop" src="${card.featuredImage}" alt="images">
+                      </div>
+                      <div class = "popup-text-btn-contain">
+                        <p class="popup-description">
+                          ${card.description}
+                        </p>
 
-                  
-                    <p class="popup-description">
-                      ${card.description}
-                    </p>
-                  
-                  <div class="spancon">
-                    <span class="span">HTML</span>
-                    <span class="span">CSS</span>
-                    <span class="span">JAVASCRIPT</span>
-                  </div>
-                  <div class="button">
-                    <a href="" class="see" type="button">See Project</a>
-                    <a href="" class="see" type="button">See Project</a>
-                  </div>
+                        <div class="see-btn-container">
+                          <a href="" class="see-btn" >See Live</a>
+                          <a href="" class="see-btn" >See Source</a>
+                        </div>
+                      </div>
+                    </div>
+                  <div/>
                 </div>
               </div>`
           }
