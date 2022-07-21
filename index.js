@@ -1,97 +1,77 @@
-let cardWorks = {
+const cardWorks = {
   card1: {
-    id:1,
-     title:'Professional Art Printing Data',
-     description:"A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-     featuredImage:'./images/popimage.png',
-     technologies:[
-      'Html',
-      'Bootstrap',
-      'Ruby'
-     ],
-     linkToLiveVersion:'https://summyalena.github.io/Website-Portfolio/',
-     LinkToSource:'......'
+    id: 1,
+    title: 'Professional Art Printing Data',
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    featuredImage: './images/popimage.png',
+    technologies: {
+      spanone: 'Html',
+      spantwo: 'Bootstrap',
+      spanthree: 'Ruby',
+    },
+    linkToLiveVersion: 'https://summyalena.github.io/Website-Portfolio/',
+    LinkToSource: 'https://github.com/summyalena/Website-Portfolio',
   },
- card2: {
-    id:2,
-     title:'Professional Art Printing Data',
-     description:"A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-     featuredImage:'./images/popimage.png',
-     technologies:{
-      span1: 'Html',
-      span2: 'Bootstrap',
-      span3: 'Ruby'
-     },
-     linkToLiveVersion:'https://summyalena.github.io/Website-Portfolio/',
-     LinkToSource:'......'
+  card2: {
+    id: 2,
+    title: 'Professional Art Printing Data',
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    featuredImage: './images/popimage.png',
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    linkToLiveVersion: 'https://summyalena.github.io/Website-Portfolio/',
+    LinkToSource: 'https://github.com/summyalena/Website-Portfolio',
   },
- card3: {
-    id:3,
-     title:'Professional Art Printing Data',
-     description:"A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-     featuredImage:'./images/popimage.png',
-     technologies:[
-      'Html',
-      'Bootstrap',
-      'Ruby'
-     ],
-     linkToLiveVersion:'https://summyalena.github.io/Website-Portfolio/',
-     LinkToSource:'......'
+  card3: {
+    id: 3,
+    title: 'Professional Art Printing Data',
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    featuredImage: './images/popimage.png',
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    linkToLiveVersion: 'https://summyalena.github.io/Website-Portfolio/',
+    LinkToSource: 'https://github.com/summyalena/Website-Portfolio',
   },
   card4: {
-    id:4,
-     title:'Professional Art Printing Data',
-     description:"A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-     featuredImage:'./images/popimage.png',
-     technologies:[
-      'Html',
-      'Bootstrap',
-      'Ruby'
-     ],
-     linkToLiveVersion:'https://summyalena.github.io/Website-Portfolio/',
-     LinkToSource:'......'
+    id: 4,
+    title: 'Professional Art Printing Data',
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    featuredImage: './images/popimage.png',
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    linkToLiveVersion: 'https://summyalena.github.io/Website-Portfolio/',
+    LinkToSource: 'https://github.com/summyalena/Website-Portfolio',
   },
- card5:  {
-    id:5,
-     title:'Professional Art Printing Data',
-     description:"A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-     featuredImage:'./images/popimage.png',
-     technologies:[
-      'Html',
-      'Bootstrap',
-      'Ruby'
-     ],
-     linkToLiveVersion:'https://summyalena.github.io/Website-Portfolio/',
-     LinkToSource:'......'
+  card5: {
+    id: 5,
+    title: 'Professional Art Printing Data',
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    featuredImage: './images/popimage.png',
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    linkToLiveVersion: 'https://summyalena.github.io/Website-Portfolio/',
+    LinkToSource: 'https://github.com/summyalena/Website-Portfolio',
   },
   card6: {
-    id:6,
-     title:'Professional Art Printing Data',
-     description:"A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-     featuredImage:'./images/popimage.png',
-     technologies:[
-      'Html',
-      'Bootstrap',
-      'Ruby'
-     ],
-     linkToLiveVersion:'https://summyalena.github.io/Website-Portfolio/',
-     LinkToSource:'......'
-  }
-}
+    id: 6,
+    title: 'Professional Art Printing Data',
+    description: "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    featuredImage: './images/popimage.png',
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    linkToLiveVersion: 'https://summyalena.github.io/Website-Portfolio/',
+    LinkToSource: 'https://github.com/summyalena/Website-Portfolio',
+  },
+};
 
-const cardSection = document.querySelector('.cardworks')
+const cardSection = document.querySelector('.cardworks');
 
-for(const cards in cardWorks){
-  if(Object.hasOwnProperty.call(cardWorks, cards)){
-   const card =  cardWorks[cards]
-  cardSection.innerHTML += `
+Object.keys(cardWorks).forEach((cards) => {
+  if (Object.hasOwnProperty.call(cardWorks, cards)) {
+    const card = cardWorks[cards];
+    cardSection.innerHTML += `
   <div class="card-images">
     <div class="cardwork-container">
       <div class=" cardwork cardwork1">
         <div class="cardcon">
           <h3>${card.title}</h3>
           <p>
-          ${card.description.length > 90 ? card.description.substring(0,90) : card.description}
+          ${card.description.length > 90 ? card.description.substring(0, 90) : card.description}
           </p>
           <div class="spancon">
             <span class="span">HTML</span>
@@ -104,23 +84,21 @@ for(const cards in cardWorks){
         </div>
       </div>
     </div>
-  </div>`
-}
-}
+  </div>`;
+  }
+});
 
-const projectPopup = document.querySelector('.project-popup')
-console.log(projectPopup)
-const popButton = document.querySelectorAll('.see')
-console.log(popButton)
+const projectPopup = document.querySelector('.project-popup');
+const popButton = document.querySelectorAll('.see');
 
-popButton.forEach(popup=> {
-  popup.addEventListener('click', (e)=>{
-    e.preventDefault()
-    for(const cards in cardWorks){
-      if(Object.hasOwnProperty.call(cardWorks,cards)){
-        const card = cardWorks[cards]
-          if (card.id == popup.id) {
-            projectPopup.innerHTML = `
+popButton.forEach((popup) => {
+  popup.addEventListener('click', (e) => {
+    e.preventDefault();
+    Object.keys(cardWorks).forEach((cards) => {
+      if (Object.hasOwnProperty.call(cardWorks, cards)) {
+        const card = cardWorks[cards];
+        if (card.id.toString() === popup.id.toString()) {
+          projectPopup.innerHTML = `
               <div class="popup-container">
                 <div class = "popup-container-child">
                   <div class="popup-cardwork">
@@ -143,21 +121,25 @@ popButton.forEach(popup=> {
                         </p>
 
                         <div class="see-btn-container">
-                          <a href="" class="see-btn" >See Live</a>
-                          <a href="" class="see-btn" >See Source</a>
+                          <a href="https://summyalena.github.io/Website-Portfolio/" class="see-btn" >See Live</a>
+                          <a href="https://github.com/summyalena/Website-Portfolio" class="see-btn" >See Source</a>
                         </div>
                       </div>
                     </div>
                   <div/>
                 </div>
-              </div>`
-          }
-    }
-  }
-    
-  })
-}
-)
+              </div>`;
+
+          const closePopup = document.querySelector('.popup-close-btn');
+
+          closePopup.addEventListener('click', () => {
+            projectPopup.innerHTML = '';
+          });
+        }
+      }
+    });
+  });
+});
 
 const mobileNav = document.querySelector('.mobile-nav');
 const hamburgerMenu = document.querySelector('.hamburger');

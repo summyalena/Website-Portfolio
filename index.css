@@ -10,12 +10,6 @@
   padding: 0;
 }
 
-/* body {
-  width: 100vw;
-  height: auto;
-  overflow-x: hidden;
-} */
-
 @media screen and (min-width: 218px) {
   .body {
     background-color: #1c1a19;
@@ -82,13 +76,6 @@
     z-index: 101;
   }
 
-  /* .main {
-    width: 100vw;
-    height: 120vh;
-  } */
-
-  
-
   .headline {
     display: flex;
     justify-content: center;
@@ -97,7 +84,8 @@
     flex-direction: column;
   }
 
-  .headline, .sociallinks{
+  .headline,
+  .sociallinks {
     width: 85%;
     margin: 0 auto;
   }
@@ -139,6 +127,14 @@
     width: 80%;
   }
 
+  .button a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .mobile-nav li {
     font-family: "Inter", sans-serif;
     color: #fff5e1;
@@ -169,42 +165,41 @@
     z-index: 100;
   }
 
-  .popup-container-child{
+  .popup-container-child {
     width: 80%;
-    background-color:white;
+    background-color: white;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
   }
 
-  .popup-cardwork{
+  .popup-cardwork {
     padding: 4%;
     height: 100%;
     flex-direction: column;
     gap: 30px;
   }
 
-
-  .popup-close-btn{
+  .popup-close-btn {
     font-size: 35px;
     font-weight: 900;
     font-style: bold;
-
+    cursor: pointer;
   }
-  .popup-cardwork  h1{
-    font-family: 'Crete Round';
+
+  .popup-cardwork h1 {
+    font-family: 'Crete Round', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
     padding-bottom: 20px;
-    color: #172B4D;
+    color: #172b4d;
   }
 
-  .title-popup{
+  .title-popup {
     display: flex;
     justify-content: space-between;
-    
   }
 
   .popup-spancon {
@@ -213,39 +208,40 @@
     padding-bottom: 50px;
   }
 
-  .popup-spancon .popup-span{
+  .popup-spancon .popup-span {
     border: 1px black solid;
     padding: 8px;
   }
 
-  .popup-image{
+  .popup-image {
     height: 60%;
   }
 
-  .image-pop{
+  .image-pop {
     width: 100%;
     height: 100%;
   }
 
-  .popup-text-btn-contain, .image-text-container{
+  .popup-text-btn-contain,
+  .image-text-container {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
 
-  .popup-description{
+  .popup-description {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
   }
 
-  .see-btn-container{
+  .see-btn-container {
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
   }
 
-  .see-btn{
+  .see-btn {
     padding: 12px;
     background-color: #f55800;
     text-decoration: none;
@@ -255,9 +251,9 @@
     line-height: 24px;
   }
 
-  .see-btn:hover{
-    background: #FFF5E1;
-    border: 1px solid #F55800;
+  .see-btn:hover {
+    background: #fff5e1;
+    border: 1px solid #f55800;
     color: #f55800;
   }
 
@@ -274,9 +270,6 @@
     justify-content: center;
     gap: 20px;
   }
-
-  
-
 
   .hero-heading {
     font-family: "Crete Round", serif;
@@ -305,8 +298,6 @@
     color: #fff;
   }
 
-  
-
   .sociallinks {
     display: flex;
     gap: 20px;
@@ -316,22 +307,19 @@
     list-style: none;
   }
 
-  #work-section{
+  #work-section {
     width: 80%;
     margin: 0 auto;
     background-color: white;
   }
-  
 
   .works {
     display: flex;
     flex-direction: column;
     background-color: white;
-    /* width: 90%;
-    margin: 0 auto; */
   }
 
-  .recent-work-header{
+  .recent-work-header {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -382,7 +370,7 @@
     font-size: 28px;
     line-height: 44px;
     margin-top: 1px;
-    color: #091e42; 
+    color: #091e42;
   }
 
   .p {
@@ -420,6 +408,7 @@
     background-color: #ff6b00;
     display: flex;
     gap: 10px;
+
     /* margin-left: 36px; */
     width: 124px;
     font-family: "Inter", sans-serif;
@@ -454,74 +443,19 @@
   .cardworks {
     background-color: white;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
     grid-gap: 20px;
     padding: 5% 0;
   }
 
-  /* .cardimages {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    flex-direction: column;
-  } */
-  
-
   .cardwork1 {
-    background: linear-gradient(0deg, rgb(26, 26, 26) 0%, rgb(36, 36, 37) 49%, rgba(255,255,255) 100%);
+    background: linear-gradient(0deg, rgb(26, 26, 26) 0%, rgb(36, 36, 37) 49%, rgba(255, 255, 255) 100%);
     background-size: cover;
     margin-bottom: 10px;
     background-repeat: no-repeat;
     opacity: 0.9;
   }
-/* 
-  .cardwork2 {
-    background-image: url("images/image.png");
-    width: 327px;
-    background-size: cover;
-    height: 386px;
-    margin-bottom: 10px;
-    background-repeat: no-repeat;
-  }
 
-  .cardwork3 {
-    background-image: url("images/image.png");
-    width: 327px;
-    background-size: cover;
-    margin-bottom: 10px;
-    height: 386px;
-    background-repeat: no-repeat;
-  }
-
-  .cardwork4 {
-    background-image: url("images/image.png");
-    width: 327px;
-    background-size: cover;
-    height: 386px;
-    background-repeat: no-repeat;
-  }
-
-  .cardwork5 {
-    background-image: url("images/image.png");
-    width: 327px;
-    margin-top: 10px;
-    background-size: cover;
-    height: 386px;
-    background-repeat: no-repeat;
-  }
-
-  .cardwork6 {
-    background-image: url("images/image.png");
-    width: 327px;
-    margin-top: 10px;
-    background-size: cover;
-    height: 386px;
-    background-repeat: no-repeat;
-  }
- */
   .cardcon {
     height: 81%;
     width: 327px;
@@ -546,76 +480,6 @@
     display: flex;
     align-items: flex-start;
   }
-/* 
-  .cardwork2 h3 {
-    font-family: "Crete Round", sans-serif;
-    font-weight: 400;
-    height: 81px;
-    font-style: normal;
-    width: 295px;
-    margin-top: 60px;
-    font-size: 32px;
-    line-height: 44px;
-    color: white;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .cardwork3 h3 {
-    font-family: "Crete Round", sans-serif;
-    font-weight: 400;
-    height: 81px;
-    font-style: normal;
-    width: 295px;
-    margin-top: 60px;
-    font-size: 32px;
-    line-height: 44px;
-    color: white;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .cardwork4 h3 {
-    font-family: "Crete Round", sans-serif;
-    font-weight: 400;
-    height: 81px;
-    font-style: normal;
-    width: 295px;
-    margin-top: 60px;
-    font-size: 32px;
-    line-height: 44px;
-    color: white;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .cardwork5 h3 {
-    font-family: "Crete Round", sans-serif;
-    font-weight: 400;
-    height: 81px;
-    font-style: normal;
-    width: 295px;
-    margin-top: 60px;
-    font-size: 32px;
-    line-height: 44px;
-    color: white;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .cardwork6 h3 {
-    font-family: "Crete Round", sans-serif;
-    font-weight: 400;
-    height: 81px;
-    font-style: normal;
-    width: 295px;
-    margin-top: 60px;
-    font-size: 32px;
-    line-height: 44px;
-    color: white;
-    display: flex;
-    align-items: flex-start;
-  } */
 
   .cardwork1 p {
     font-family: "Inter", sans-serif;
@@ -630,76 +494,6 @@
     display: flex;
     align-items: flex-start;
   }
-/* 
-  .cardwork2 p {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    font-style: normal;
-    width: 275px;
-    margin-top: 20px;
-    height: 87px;
-    line-height: 24px;
-    color: white;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .cardwork3 p {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    font-style: normal;
-    width: 275px;
-    margin-top: 20px;
-    height: 87px;
-    line-height: 24px;
-    color: white;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .cardwork4 p {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    font-style: normal;
-    width: 275px;
-    margin-top: 20px;
-    height: 87px;
-    line-height: 24px;
-    color: white;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .cardwork5 p {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    font-style: normal;
-    width: 275px;
-    margin-top: 20px;
-    height: 87px;
-    line-height: 24px;
-    color: white;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .cardwork6 p {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    font-style: normal;
-    width: 275px;
-    margin-top: 20px;
-    height: 87px;
-    line-height: 24px;
-    color: white;
-    display: flex;
-    align-items: flex-start;
-  } */
 
   .spancon {
     display: flex;
@@ -724,15 +518,6 @@
     line-height: 20px;
     background: rgba(255, 255, 255, 0.24);
   }
-  
-  .button a {
-   text-decoration: none;
-   color: white;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-  }
-
 
   .cardwork1 .button {
     width: 100%;
@@ -755,80 +540,6 @@
     line-height: 24px;
     font-weight: 700;
   }
-/* 
-  .cardwork2 .button {
-    width: 100%;
-    margin-top: 29px;
-    height: 48px;
-    background: #ff6b00;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-
-  .cardwork3 .button {
-    width: 100%;
-    margin-top: 29px;
-    height: 48px;
-    background: #ff6b00;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-
-  .cardwork4 .button {
-    width: 100%;
-    margin-top: 29px;
-    height: 48px;
-    background: #ff6b00;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-
-  .cardwork5 .button {
-    width: 100%;
-    margin-top: 29px;
-    height: 48px;
-    background: #ff6b00;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-
-  .cardwork5 .see {
-    background-color: #ff6b00;
-    border: none;
-    width: 100%;
-    height: 100%;
-    color: white;
-    font-size: 17px;
-    font-family: "Inter", sans-serif;
-    line-height: 24px;
-    font-weight: 700;
-  }
-
-  .cardwork6 .button {
-    width: 100%;
-    margin-top: 29px;
-    height: 48px;
-    background: #ff6b00;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-
-  .cardwork6 .see {
-    background-color: #ff6b00;
-    border: none;
-    width: 100%;
-    height: 100%;
-    color: white;
-    font-size: 17px;
-    font-family: "Inter", sans-serif;
-    line-height: 24px;
-    font-weight: 700;
-  } */
 
   .cardwork1 .button:hover {
     color: #ff6b00;
@@ -836,42 +547,6 @@
     border: 2px solid orange;
     background-color: rgb(250, 207, 127);
   }
-
-  /* .cardwork2 .see {
-    background-color: #ff6b00;
-    border: none;
-    width: 100%;
-    height: 100%;
-    color: white;
-    font-size: 17px;
-    font-family: "Inter", sans-serif;
-    line-height: 24px;
-    font-weight: 700;
-  }
-
-  .cardwork3 .see {
-    background-color: #ff6b00;
-    border: none;
-    width: 100%;
-    height: 100%;
-    color: white;
-    font-size: 17px;
-    font-family: "Inter", sans-serif;
-    line-height: 24px;
-    font-weight: 700;
-  }
-
-  .cardwork4 .see {
-    background-color: #ff6b00;
-    border: none;
-    width: 100%;
-    height: 100%;
-    color: white;
-    font-size: 17px;
-    font-family: "Inter", sans-serif;
-    line-height: 24px;
-    font-weight: 700;
-  } */
 
   .cardwork1 .see:hover {
     color: #ff6b00;
@@ -905,238 +580,15 @@
     font-weight: 500;
   }
 
-  /* .cardwork2 .button:hover {
-    color: #ff6b00;
-    font-size: 500;
-    border: 2px solid orange;
-    background-color: rgb(250, 207, 127);
-  }
-
-  .cardwork2 .see:hover {
-    color: #ff6b00;
-    font-size: 500;
-    background-color: rgb(250, 207, 127);
-  }
-
-  .cardwork2 .button:focus {
-    color: white;
-    font-weight: 700;
-    border: none;
-  }
-
-  .cardwork2 .see:focus {
-    color: white;
-    font-weight: 500;
-    border: none;
-  }
-
-  .cardwork2 .button:disabled,
-  .button[disabled] {
-    background-color: lightgray;
-    color: black;
-    font-weight: 500;
-  }
-
-  .cardwork2 .see:disabled,
-  .see[disabled] {
-    background-color: lightgray;
-    color: black;
-    font-weight: 500;
-  }
-
-  .cardwork3 .button:hover {
-    color: #ff6b00;
-    font-size: 500;
-    border: 2px solid orange;
-    background-color: rgb(250, 207, 127);
-  }
-
-  .cardwork3 .see:hover {
-    color: #ff6b00;
-    font-size: 500;
-    background-color: rgb(250, 207, 127);
-  }
-
-  .cardwork3 .button:focus {
-    color: white;
-    font-weight: 700;
-    border: none;
-  }
-
-  .cardwork3 .see:focus {
-    color: white;
-    font-weight: 500;
-    border: none;
-  }
-
-  .cardwork3 .button:disabled,
-  .button[disabled] {
-    background-color: lightgray;
-    color: black;
-    font-weight: 500;
-  }
-
-  .cardwork3 .see:disabled,
-  .see[disabled] {
-    background-color: lightgray;
-    color: black;
-    font-weight: 500;
-  }
-
-  .cardwork4 .button:hover {
-    color: #ff6b00;
-    font-size: 500;
-    border: 2px solid orange;
-    background-color: rgb(250, 207, 127);
-  }
-
-  .cardwork4 .see:hover {
-    color: #ff6b00;
-    font-size: 500;
-    background-color: rgb(250, 207, 127);
-  }
-
-  .cardwork4 .button:focus {
-    color: white;
-    font-weight: 700;
-    border: none;
-  }
-
-  .cardwork4 .see:focus {
-    color: white;
-    font-weight: 500;
-    border: none;
-  }
-
-  .cardwork4 .button:disabled,
-  .button[disabled] {
-    background-color: lightgray;
-    color: black;
-    font-weight: 500;
-  }
-
-  .cardwork4 .see:disabled,
-  .see[disabled] {
-    background-color: lightgray;
-    color: black;
-    font-weight: 500;
-  }
-
-  .cardwork5 .button:hover {
-    color: #ff6b00;
-    font-size: 500;
-    border: 2px solid orange;
-    background-color: rgb(250, 207, 127);
-  }
-
-  .cardwork5 .see:hover {
-    color: #ff6b00;
-    font-size: 500;
-    background-color: rgb(250, 207, 127);
-  }
-
-  .cardwork5 .button:focus {
-    color: white;
-    font-weight: 700;
-    border: none;
-  }
-
-  .cardwork5 .see:focus {
-    color: white;
-    font-weight: 500;
-    border: none;
-  }
-
-  .cardwork5 .button:disabled,
-  .button[disabled] {
-    background-color: lightgray;
-    color: black;
-    font-weight: 500;
-  }
-
-  .cardwork5 .see:disabled,
-  .see[disabled] {
-    background-color: lightgray;
-    color: black;
-    font-weight: 500;
-  }
-
-  .cardwork6 .button:hover {
-    color: #ff6b00;
-    font-size: 500;
-    border: 2px solid orange;
-    background-color: rgb(250, 207, 127);
-  }
-
-  .cardwork6 .see:hover {
-    color: #ff6b00;
-    font-size: 500;
-    background-color: rgb(250, 207, 127);
-  }
-
-  .cardwork6 .button:focus {
-    color: white;
-    font-weight: 700;
-    border: none;
-  }
-
-  .cardwork6 .see:focus {
-    color: white;
-    font-weight: 500;
-    border: none;
-  }
-
-  .cardwork6 .button:disabled,
-  .button[disabled] {
-    background-color: lightgray;
-    color: black;
-    font-weight: 500;
-  }
-
-  .cardwork6 .see:disabled,
-  .see[disabled] {
-    background-color: lightgray;
-    color: black;
-    font-weight: 500;
-  } */
-
-  .card-images{
+  .card-images {
     width: 90%;
     margin: 0 auto;
   }
 
-  .cardwork-container{
+  .cardwork-container {
     background-image: url("./images/number1.png");
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  
-  /* .cardDesk1 {
-    display: none;
-  }
-
-  .cardDesk2 {
-    display: none;
-  }
-
-  .cardDesk3 {
-    display: none;
-  }
-
-  .cardDesk4 {
-    display: none;
-  }
-
-  .cardDesk5 {
-    display: none;
-  }
-
-  .cardDesk6 {
-    display: none;
-  } */
-
-  .cardWorkPop-active{
-   
   }
 
   #aboutme {
@@ -1302,12 +754,12 @@
     justify-content: center;
   }
 
-  .contact-section{
+  .contact-section {
     height: calc(100vh - 90px);
     padding-top: 30px;
   }
 
-  .contact-sec-container{
+  .contact-sec-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -1336,7 +788,7 @@
     transform: translate(10px 0);
   }
 
-  form{
+  form {
     padding: 20px 0;
   }
 
@@ -1408,23 +860,25 @@
 }
 
 @media screen and (min-width: 768px) {
-  .popup-cardwork{
+  .popup-cardwork {
     padding: 2%;
   }
 
-  .popup-image{
+  .popup-image {
     height: 100%;
   }
 
-  .image-text-container{
+  .image-text-container {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
     height: 80%;
   }
-  .popup-text-btn-contain{
+
+  .popup-text-btn-contain {
     justify-content: space-between;
   }
-  .see-btn-container{
+
+  .see-btn-container {
     padding-bottom: 0;
     justify-content: flex-start;
     gap: 5px;
@@ -1432,7 +886,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .wrapper {
     justify-content: space-between;
     display: flex;
@@ -1487,15 +940,6 @@
     color: #f55800;
   }
 
-  /* .border {
-    margin-top: 80px;
-    height: 0;
-    width: 770px;
-    margin-left: -120px;
-    border: 1px solid #212121;
-  } */
-
-
   .mainwrap {
     background-image: url("./images/illustration.png");
     background-size: 40%;
@@ -1503,7 +947,6 @@
     background-position-x: right;
     flex-direction: row;
     justify-content: flex-start;
-
   }
 
   .headline {
@@ -1511,7 +954,7 @@
     width: 32%;
     margin: 0;
   }
- 
+
   .sociallinks {
     display: flex;
     flex-direction: column;
@@ -1602,17 +1045,16 @@
 
   .cardworks {
     padding: 5% 10%;
-    
   }
 
-  .recent-work-header{
+  .recent-work-header {
     align-items: center;
     flex-direction: row;
     text-align: left;
     padding: 10% 0;
   }
 
-  .recent-work-header > h2{
+  .recent-work-header > h2 {
     width: 80%;
   }
 
@@ -1621,285 +1063,6 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
   }
-
-  /* .image {
-    display: flex;
-    width: 45%;
-    height: 448px;
-    align-items: center;
-    margin-left: 141px;
-    justify-content: center;
-  }
-
-  .imG {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100vw;
-    margin: 0 auto;
-    height: 448px;
-    gap: 24px;
-    margin-top: 50px;
-  }
-
-  .img {
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-  }
-
-  .p {
-    width: 486px;
-    height: 140px;
-    font-family: "Inter", Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    color: rgb(9, 30, 66);
-  }
-
-  .stories {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    padding-right: 40px;
-    width: 40%;
-    height: 348px;
-  }
-
-  .storyhead {
-    width: 100%;
-    height: 48px;
-    font-family: "Crete Round", Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    margin-top: 40px;
-    font-size: 40px;
-    line-height: 52px;
-    display: flex;
-    align-items: center;
-    color: #091e42;
-  }
-
-  .skill {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-    margin-left: 36px;
-    justify-content: flex-start;
-    gap: 10px;
-  }
-
-  .one {
-    border: 1px solid #8993a4;
-    padding: 3px 5px;
-    align-items: center;
-    margin-top: 6px;
-    font-family: "Inter", sans-serif;
-    color: #091e42;
-    font-size: 15px;
-    display: flex;
-    flex-direction: row;
-    width: 15%;
-    margin-bottom: 10px;
-    height: 30px;
-    background-color: #fff;
-  } */
-
-  /* .cardimages {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    flex-direction: column;
-  } */
-/* 
-  #works {
-    background-color: red
-  } */
-  
-  /* .cardwork {
-    dislay:grid;
-    grid-template-columns: 30%;
-  } */
-
-  /* .cardworks {
-    display: flex;
-    height: 1276px;
-    margin-top: 40px;
-    flex-direction: column;
-  }
-
-  
-
-  .cardwork1 {
-    background-image: url("images/number1.png");
-    width: 30%;
-    background-size: cover;
-    height: 520px;
-    opacity: 0.5;
-    background-repeat: no-repeat;
-    transition: all 0.3s ease;
-  }
-
-  .cardwork1:hover {
-    transform: scale(1.03);
-  }
-
-  .cardcon {
-    margin-top: 170px;
-    gap: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 8px 16px;
-    width: 369px;
-    height: 257px;
-  }
-
-  .cardwork1 .cardcon {
-    display: none;
-  } */
-/* 
-  .cardwork2 {
-    background-image: url("images/availability.png");
-    width: 30%;
-    background-size: cover;
-    height: 520px;
-    background-repeat: no-repeat;
-    transition: all 0.3s ease;
-  }
-
-  .cardwork2:hover {
-    transform: scale(1.03);
-  }
-
-  .cardwork3 {
-    background-image: url("images/migel.png");
-    width: 30%;
-    background-size: cover;
-    height: 520px;
-    background-repeat: no-repeat;
-    transition: all 0.3s ease;
-  }
-
-  .cardwork3:hover {
-    transform: scale(1.03);
-  }
-
-  .cardwork4 {
-    background-image: url("images/image.png");
-    width: 30%;
-    background-size: cover;
-    height: 520px;
-    background-repeat: no-repeat;
-    transition: all 0.3s ease;
-  }
-
-  .cardwork4:hover {
-    transform: scale(1.03);
-  }
-
-  .cardwork5 {
-    background-image: url("images/availability.png");
-    width: 30%;
-    background-size: cover;
-    height: 520px;
-    background-repeat: no-repeat;
-    transition: all 0.3s ease;
-  }
-
-  .cardwork5:hover {
-    transform: scale(1.03);
-  }
-
-  .cardwork6 {
-    background-image: url("images/migel.png");
-    width: 30%;
-    background-size: cover;
-    height: 520px;
-    background-repeat: no-repeat;
-    transition: all 0.3s ease;
-  }
-
-  .cardwork6:hover {
-    transform: scale(1.03);
-  } */
-
-  /* .cardwork1 .button {
-    width: 100%;
-    margin-top: 473px;
-    height: 48px;
-    background: #ff6b00;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  } */
-
-  /* .cardDesk1 {
-    display: grid;
-  }
-
-  .cardDesk2 {
-    display: grid;
-  }
-
-  .cardDesk3 {
-    display: grid;
-  }
-
-  .cardDesk4 {
-    display: grid;
-  }
-
-  .cardDesk5 {
-    display: grid;
-  }
-
-  .cardDesk6 {
-    display: grid;
-  }
-
-  .cardMobile {
-    display: none;
-  } */
-
-  /* .spancon {
-    display: flex;
-  } */
-
-  /* .cardwork2 .button {
-    display: none;
-  }
-
-  .cardwork3 .button {
-    display: none;
-  }
-
-  .cardwork4 .button {
-    display: none;
-  }
-
-  .cardwork5 .button {
-    display: none;
-  }
-
-  .cardwork6 .button {
-    display: none;
-  } */
-
-  /* .cardwrapper {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-    margin: 0 10px;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-  } */
 
   .ill2 {
     display: none;
@@ -1997,10 +1160,9 @@
     padding: 0 50px;
   }
 
-  .contact-sec-container{
+  .contact-sec-container {
     gap: 30px;
   }
-  
 
   .contact-text-container {
     display: flex;
@@ -2009,9 +1171,6 @@
     padding: 1px 24px;
     text-align: left;
   }
-
-
-  
 
   .contact-text {
     width: 40%;
@@ -2056,8 +1215,6 @@
     height: 48px;
   }
 
-  
-
   .input-email {
     /* width: 684px; */
   }
@@ -2071,5 +1228,4 @@
     height: 330px;
     padding-left: 20px;
   }
-
 }
