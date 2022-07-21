@@ -107,9 +107,9 @@ popButton.forEach((popup) => {
                       <div class= "popup-close-btn">&times;</div>
                     </div>
                     <div class="popup-spancon">
-                        <span class="popup-span">HTML</span>
-                        <span class="popup-span">CSS</span>
-                        <span class="popup-span">JAVASCRIPT</span>
+                        <span class="popup-span">Html</span>
+                        <span class="popup-span">Bootstrap</span>
+                        <span class="popup-span">Javascript</span>
                     </div>
                     <div class = "image-text-container">
                       <div class="popup-image">
@@ -121,8 +121,8 @@ popButton.forEach((popup) => {
                         </p>
 
                         <div class="see-btn-container">
-                          <a href="https://summyalena.github.io/Website-Portfolio/" class="see-btn" >See Live</a>
-                          <a href="https://github.com/summyalena/Website-Portfolio" class="see-btn" >See Source</a>
+                          <a href="https://summyalena.github.io/Website-Portfolio/" class="see-btn" >See Live <img class="imgIcon" src="./images/icon.png"/></a>
+                          <a href="https://github.com/summyalena/Website-Portfolio" class="see-btn" >See Source <img class="imgIcon" src="./images/Vector.png"/></a>
                         </div>
                       </div>
                     </div>
