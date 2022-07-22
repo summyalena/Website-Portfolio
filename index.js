@@ -180,7 +180,7 @@ form.addEventListener('submit', (e) => {
     errorDisplay.innerText = message;
     inputControl.classList.add('error');
     inputControl.classList.remove('success');
-}
+  }
 
  const success = (element) =>{
     const inputControl = element.parentElement;
@@ -190,7 +190,60 @@ form.addEventListener('submit', (e) => {
     texto.innerText = 'successful'
     inputControl.classList.add('success');
     inputControl.classList.remove('error');
-}  
+  }  
+
+
+const RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+function validateInput() {
+  const lastNameValue = lastName.value
+  const nameValue = names.value
+  const textAreaValue = textArea.value.trim()
+  const emailValue = email.value
+
+  if(nameValue === '') {
+    Error(names,'Please input your name')
+    Error(texto2, 'Kindly fill in the necessary details');
+  }
+  // else {
+  //   success(names)
+  // }
+   
+  if(lastNameValue === '') {
+    Error(lastName, 'Please input your last name');
+    Error(texto2, 'Kindly fill in the necessary details');
+  } else{
+  }
+
+  if(emailValue === '') {
+    console.log(emailValue)
+       Error(email, 'please input an email');
+       Error(texto2, 'Kindly fill in the necessary details');
+   } else if(!emailValue.match(RegExp)) {
+      Error(email, 'your email should have standard email format');
+      Error(texto2, 'Kindly fill in the necessary details');
+   } else{ 
+    
+  }
+
+  
+  if(textAreaValue === '') {
+      Error(textArea, 'Please input a message')
+  } else{
+    // console.log(textAreaValue)
+    //   success(textArea)
+    Error(texto2, 'Kindly fill in the necessary details');
+  }
+
+  if(textAreaValue && emailValue && emailValue.match(RegExp) && lastNameValue && nameValue){
+    success(texto)
+    textAreaValue = ""
+    emailValue = ""
+    lastNameValue = ""
+    nameValue = ""
+  }
+    
+}
 
 const mobileNav = document.querySelector(".mobile-nav");
 const hamburgerMenu = document.querySelector(".hamburger");
