@@ -1,71 +1,71 @@
 const cardWorks = {
   card1: {
     id: 1,
-    title: "Professional Art Printing Data",
+    title: 'Professional Art Printing Data',
     description:
       "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    featuredImage: "./images/popimage.png",
+    featuredImage: './images/popimage.png',
     technologies: {
-      spanone: "Html",
-      spantwo: "Bootstrap",
-      spanthree: "Ruby",
+      spanone: 'Html',
+      spantwo: 'Bootstrap',
+      spanthree: 'Ruby',
     },
-    linkToLiveVersion: "https://summyalena.github.io/Website-Portfolio/",
-    LinkToSource: "https://github.com/summyalena/Website-Portfolio",
+    linkToLiveVersion: 'https://summyalena.github.io/Website-Portfolio/',
+    LinkToSource: 'https://github.com/summyalena/Website-Portfolio',
   },
   card2: {
     id: 2,
-    title: "Professional Art Printing Data",
+    title: 'Professional Art Printing Data',
     description:
       "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    featuredImage: "./images/popimage.png",
-    technologies: ["Html", "Bootstrap", "Ruby"],
-    linkToLiveVersion: "https://summyalena.github.io/Website-Portfolio/",
-    LinkToSource: "https://github.com/summyalena/Website-Portfolio",
+    featuredImage: './images/popimage.png',
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    linkToLiveVersion: 'https://summyalena.github.io/Website-Portfolio/',
+    LinkToSource: 'https://github.com/summyalena/Website-Portfolio',
   },
   card3: {
     id: 3,
-    title: "Professional Art Printing Data",
+    title: 'Professional Art Printing Data',
     description:
       "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    featuredImage: "./images/popimage.png",
-    technologies: ["Html", "Bootstrap", "Ruby"],
-    linkToLiveVersion: "https://summyalena.github.io/Website-Portfolio/",
-    LinkToSource: "https://github.com/summyalena/Website-Portfolio",
+    featuredImage: './images/popimage.png',
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    linkToLiveVersion: 'https://summyalena.github.io/Website-Portfolio/',
+    LinkToSource: 'https://github.com/summyalena/Website-Portfolio',
   },
   card4: {
     id: 4,
-    title: "Professional Art Printing Data",
+    title: 'Professional Art Printing Data',
     description:
       "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    featuredImage: "./images/popimage.png",
-    technologies: ["Html", "Bootstrap", "Ruby"],
-    linkToLiveVersion: "https://summyalena.github.io/Website-Portfolio/",
-    LinkToSource: "https://github.com/summyalena/Website-Portfolio",
+    featuredImage: './images/popimage.png',
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    linkToLiveVersion: 'https://summyalena.github.io/Website-Portfolio/',
+    LinkToSource: 'https://github.com/summyalena/Website-Portfolio',
   },
   card5: {
     id: 5,
-    title: "Professional Art Printing Data",
+    title: 'Professional Art Printing Data',
     description:
       "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    featuredImage: "./images/popimage.png",
-    technologies: ["Html", "Bootstrap", "Ruby"],
-    linkToLiveVersion: "https://summyalena.github.io/Website-Portfolio/",
-    LinkToSource: "https://github.com/summyalena/Website-Portfolio",
+    featuredImage: './images/popimage.png',
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    linkToLiveVersion: 'https://summyalena.github.io/Website-Portfolio/',
+    LinkToSource: 'https://github.com/summyalena/Website-Portfolio',
   },
   card6: {
     id: 6,
-    title: "Professional Art Printing Data",
+    title: 'Professional Art Printing Data',
     description:
       "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    featuredImage: "./images/popimage.png",
-    technologies: ["Html", "Bootstrap", "Ruby"],
-    linkToLiveVersion: "https://summyalena.github.io/Website-Portfolio/",
-    LinkToSource: "https://github.com/summyalena/Website-Portfolio",
+    featuredImage: './images/popimage.png',
+    technologies: ['Html', 'Bootstrap', 'Ruby'],
+    linkToLiveVersion: 'https://summyalena.github.io/Website-Portfolio/',
+    LinkToSource: 'https://github.com/summyalena/Website-Portfolio',
   },
 };
 
-const cardSection = document.querySelector(".cardworks");
+const cardSection = document.querySelector('.cardworks');
 
 Object.keys(cardWorks).forEach((cards) => {
   if (Object.hasOwnProperty.call(cardWorks, cards)) {
@@ -78,10 +78,10 @@ Object.keys(cardWorks).forEach((cards) => {
           <h3>${card.title}</h3>
           <p>
           ${
-            card.description.length > 90
-              ? card.description.substring(0, 90)
-              : card.description
-          }
+  card.description.length > 90
+    ? card.description.substring(0, 90)
+    : card.description
+}
           </p>
           <div class="spancon">
             <span class="span">HTML</span>
@@ -98,11 +98,11 @@ Object.keys(cardWorks).forEach((cards) => {
   }
 });
 
-const projectPopup = document.querySelector(".project-popup");
-const popButton = document.querySelectorAll(".see");
+const projectPopup = document.querySelector('.project-popup');
+const popButton = document.querySelectorAll('.see');
 
 popButton.forEach((popup) => {
-  popup.addEventListener("click", (e) => {
+  popup.addEventListener('click', (e) => {
     e.preventDefault();
     Object.keys(cardWorks).forEach((cards) => {
       if (Object.hasOwnProperty.call(cardWorks, cards)) {
@@ -140,10 +140,10 @@ popButton.forEach((popup) => {
                 </div>
               </div>`;
 
-          const closePopup = document.querySelector(".popup-close-btn");
+          const closePopup = document.querySelector('.popup-close-btn');
 
-          closePopup.addEventListener("click", () => {
-            projectPopup.innerHTML = "";
+          closePopup.addEventListener('click', () => {
+            projectPopup.innerHTML = '';
           });
         }
       }
@@ -154,110 +154,97 @@ popButton.forEach((popup) => {
 // #Form Validation
 const form = document.getElementById('form');
 const names = document.getElementById('name');
-const lastName = document.getElementById('lastname')
+const lastName = document.getElementById('lastname');
 const email = document.getElementById('email');
 const textArea = document.getElementById('area');
 const texto = document.getElementById('texto');
-const texto1 = document.getElementById('texto1');
 const texto2 = document.getElementById('texto2');
-const texto3 = document.getElementById('texto3');
 
-// we have to add what happens it wants to submit 
+// we have to add what happens it wants to submit
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
+  // eslint-disable-next-line
   validateInput();
 
-  if(!validateInput()){
-  }
-  
+  // form.reset();
 });
 
- const Error = (element, message) => {
-    const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('.error');
+const Error = (element, message) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector('.error');
 
-    errorDisplay.innerText = message;
-    inputControl.classList.add('error');
-    inputControl.classList.remove('success');
-  }
+  errorDisplay.innerText = message;
+  inputControl.classList.add('error');
+  inputControl.classList.remove('success');
+};
 
- const success = (element) =>{
-    const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('.error')
+const success = (element) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector('.error');
 
-    errorDisplay.innerText = ' ';
-    texto.innerText = 'successful'
-    inputControl.classList.add('success');
-    inputControl.classList.remove('error');
-  }  
+  errorDisplay.innerText = ' ';
+  texto.innerText = 'successful';
+  inputControl.classList.add('success');
+  inputControl.classList.remove('error');
+};
 
-
+/* eslint-disable no-useless-escape */
 const RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 function validateInput() {
-  const lastNameValue = lastName.value
-  const nameValue = names.value
-  const textAreaValue = textArea.value.trim()
-  const emailValue = email.value
+  const lastNameValue = lastName.value;
+  const nameValue = names.value;
+  const textAreaValue = textArea.value.trim();
+  const emailValue = email.value;
 
-  if(nameValue === '') {
-    Error(names,'Please input your name')
+  if (nameValue === '') {
+    Error(names, 'Please input your name');
     Error(texto2, 'Kindly fill in the necessary details');
   }
-  // else {
-  //   success(names)
-  // }
-   
-  if(lastNameValue === '') {
+
+  if (lastNameValue === '') {
     Error(lastName, 'Please input your last name');
     Error(texto2, 'Kindly fill in the necessary details');
-  } else{
   }
 
-  if(emailValue === '') {
-    console.log(emailValue)
-       Error(email, 'please input an email');
-       Error(texto2, 'Kindly fill in the necessary details');
-   } else if(!emailValue.match(RegExp)) {
-      Error(email, 'your email should have standard email format');
-      Error(texto2, 'Kindly fill in the necessary details');
-   } else{ 
-    
-  }
-
-  
-  if(textAreaValue === '') {
-      Error(textArea, 'Please input a message')
-  } else{
-    // console.log(textAreaValue)
-    //   success(textArea)
+  if (emailValue === '') {
+    Error(email, 'please input an email');
+    Error(texto2, 'Kindly fill in the necessary details');
+  } else if (!emailValue.match(RegExp)) {
+    Error(email, 'your email should have standard email format');
     Error(texto2, 'Kindly fill in the necessary details');
   }
 
-  if(textAreaValue && emailValue && emailValue.match(RegExp) && lastNameValue && nameValue){
-    success(texto)
-    textAreaValue = ""
-    emailValue = ""
-    lastNameValue = ""
-    nameValue = ""
+  if (textAreaValue === '') {
+    Error(textArea, 'Please input a message');
+  } else {
+    Error(texto2, 'Kindly fill in the necessary details');
   }
-    
+
+  if (textAreaValue && emailValue && emailValue.match(RegExp) && lastNameValue && nameValue) {
+    success(texto);
+    success(names);
+    success(lastName);
+    success(email);
+    success(textArea);
+    form.reset();
+  }
 }
 
-const mobileNav = document.querySelector(".mobile-nav");
-const hamburgerMenu = document.querySelector(".hamburger");
-const hamburgerClose = document.querySelector(".hamburger-close");
-const mobileNavLink = document.querySelectorAll(".mobile-nav-link");
+const mobileNav = document.querySelector('.mobile-nav');
+const hamburgerMenu = document.querySelector('.hamburger');
+const hamburgerClose = document.querySelector('.hamburger-close');
+const mobileNavLink = document.querySelectorAll('.mobile-nav-link');
 
-hamburgerMenu.addEventListener("click", () => {
-  mobileNav.classList.toggle("is-active");
-  hamburgerClose.classList.toggle("is-active");
+hamburgerMenu.addEventListener('click', () => {
+  mobileNav.classList.toggle('is-active');
+  hamburgerClose.classList.toggle('is-active');
 });
 
 mobileNavLink.forEach((link) => {
-  link.addEventListener("click", () => {
-    mobileNav.classList.toggle("is-active");
-    hamburgerClose.classList.toggle("is-active");
+  link.addEventListener('click', () => {
+    mobileNav.classList.toggle('is-active');
+    hamburgerClose.classList.toggle('is-active');
   });
 });
