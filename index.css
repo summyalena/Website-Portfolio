@@ -108,6 +108,13 @@
     transition: 0.4s;
   }
 
+  .input-control .error {
+    color: rgb(255, 0, 0);
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+  }
+
   .mobile-nav.is-active {
     left: 0;
   }
@@ -833,12 +840,23 @@
     border-bottom: solid 1px rgb(219, 216, 215);
     width: 80%;
     padding: 20px;
+    outline: none;
     font-family: "Inter", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     color: rgb(151, 148, 147);
+  }
+
+  .input-control.success .input {
+    border-color: rgba(37, 94, 23, 0.918);
+    height: 5px;
+  }
+
+  .input-control.error .input {
+    border-color: rgb(83, 11, 11);
+    height: 5px;
   }
 
   .area {
