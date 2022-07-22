@@ -297,39 +297,52 @@
             I'm always interested in hearing about new projects so if you'd like
             to chat please get in
           </h3>
-          <form method="post" action="https://formspree.io/f/mrgjwppa">
+          <form method="post" id="form" action="https://formspree.io/f/mrgjwppa">
             <div class="formAddress">
+              <div class="input-control">
               <input
                 class="input"
-                required
-                maxlength="30"
+                id="name"
                 name="name"
                 type="text"
                 placeholder="Full Name"
-                value=""
               />
+              <div class="error"></div>
+               </div>
+
+               <div class="input-control">
               <input
                 class="input"
-                required
-                maxlength="30"
+                id="lastname"
+                name="name"
                 type="text"
-                placeholder="Last Name"
-                value=""
-              />
-            </div>
+                placeholder="Last Name" />
+               <div class="error"></div>
+                </div>
+            </div>       
+            <div class="input-control">
             <input
               class="input input-email"
-              required
-              type="email"
+              id="email"
+              name="email"
+              type="text"
               placeholder="Email Address"
-              value=""
-            />
+            /> <div class="error"></div>
+               </div>  
             <div class="textarea">
-              <textarea maxlength="500" name="text" required class="area">
-   Enter text here </textarea
-              >
-              <button type="button" class="resume btn-mid">Get In Touch</button>
+              <div class="input-control">
+              <textarea maxlength="500" name="area" id="area" class="area">
+                </textarea>
+              <div class="error"></div>
+              </div>
             </div>
+             <div class="input-control">
+              <button type="submit" class="resume btn-mid">Get In Touch</button>
+              <div id="texto" class="error"></div>
+              <div id="texto1" class="error"></div>
+              <div id="texto2" class="error"></div>
+              <div id="texto3" class="error"></div>
+              </div>
           </form>
         </div>
       </div>
