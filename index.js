@@ -173,12 +173,22 @@ function storeData() {
   };
   console.log(data);
   contactArr.push(data);
-  localStorage.setItem('contactMeData', JSON.stringify(contactArr));
+  localStorage.setItem('contactUsData', JSON.stringify(contactArr));
 }
 
 function getDataFromLS() {
- const retrievedData = JSON.parse(localStorage.getItem('contactMeData'))
+ const retrievedData = JSON.parse(localStorage.getItem('contactUsData'))
  return retrievedData;
+}
+
+function displayData() {
+  const getData = getDataFromLS();
+  if(getData) {
+    names.value = getData[0].name;
+    lastName.value = getData[0].lastName;
+    email.value = getData[0].email;
+    textArea.value = getData[0].textArea;
+  }
 }
 
 // we have to add what happens it wants to submit
