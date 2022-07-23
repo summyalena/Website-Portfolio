@@ -159,6 +159,36 @@ const email = document.getElementById('email');
 const textArea = document.getElementById('area');
 const texto = document.getElementById('texto');
 const texto2 = document.getElementById('texto2');
+const contactArr = [];
+
+// eslint-disable-next-line
+displayData();
+
+function storeData() {
+  const data = {
+    name: names.value,
+    lastName: lastName.value,
+    email: email.value,
+    textArea: textArea.value,
+  };
+  contactArr.push(data);
+  localStorage.setItem('contactUsData', JSON.stringify(contactArr));
+}
+
+function getDataFromLS() {
+  const retrievedData = JSON.parse(localStorage.getItem('contactUsData'));
+  return retrievedData;
+}
+
+function displayData() {
+  const getData = getDataFromLS();
+  if (getData) {
+    names.value = getData[0].name;
+    lastName.value = getData[0].lastName;
+    email.value = getData[0].email;
+    textArea.value = getData[0].textArea;
+  }
+}
 
 // we have to add what happens it wants to submit
 form.addEventListener('submit', (e) => {
@@ -228,6 +258,7 @@ function validateInput() {
     success(lastName);
     success(email);
     success(textArea);
+    storeData();
     form.reset();
   }
 }
