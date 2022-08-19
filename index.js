@@ -1,17 +1,18 @@
 const cardWorks = {
   card1: {
     id: 1,
-    title: 'Professional Art Printing Data',
+    title: 'Youth Summit',
     description:
-      "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    featuredImage: './images/popimage.png',
-    technologies: {
-      spanone: 'Html',
-      spantwo: 'Bootstrap',
-      spanthree: 'Ruby',
-    },
-    linkToLiveVersion: 'https://summyalena.github.io/Website-Portfolio/',
-    LinkToSource: 'https://github.com/summyalena/Website-Portfolio',
+      'This is a website that advertises a youth conference taken place in Nigeria, there have been many youth summits in the country but SPEAK YOUTH TO POWER has made so much impact and wishes to make much more impact thus the reason why th conference holds',
+    backgroundImage: './images/youthsummit.JPG',
+    featuredImage: './images/youthsummit.JPG',
+    technologies: [
+      'Html',
+      'CSS',
+      'JAVASCRIPT',
+    ],
+    linkToLiveVersion: 'https://summyalena.github.io/YouthSummit/',
+    LinkToSource: 'https://github.com/summyalena/YouthSummit',
   },
   card2: {
     id: 2,
@@ -117,9 +118,9 @@ popButton.forEach((popup) => {
                       <div class= "popup-close-btn">&times;</div>
                     </div>
                     <div class="popup-spancon">
-                        <span class="popup-span">Html</span>
-                        <span class="popup-span">Bootstrap</span>
-                        <span class="popup-span">Javascript</span>
+                        <span class="popup-span">${card.technologies[0]}</span>
+                        <span class="popup-span">${card.technologies[1]}</span>
+                        <span class="popup-span">${card.technologies[2]}</span>
                     </div>
                     <div class = "image-text-container">
                       <div class="popup-image">
@@ -183,7 +184,7 @@ function getDataFromLS() {
 function displayData() {
   const getData = getDataFromLS();
   if (getData) {
-    names.value = getData[0].name;
+    names.value = getData[0].names;
     lastName.value = getData[0].lastName;
     email.value = getData[0].email;
     textArea.value = getData[0].textArea;
