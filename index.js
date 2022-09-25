@@ -191,16 +191,6 @@ function displayData() {
   }
 }
 
-// we have to add what happens it wants to submit
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  // eslint-disable-next-line
-  validateInput();
-
-  // form.reset();
-});
-
 const Error = (element, message) => {
   const inputControl = element.parentElement;
   const errorDisplay = inputControl.querySelector('.error');
@@ -263,6 +253,16 @@ function validateInput() {
     form.reset();
   }
 }
+
+// we have to add what happens it wants to submit
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  // eslint-disable-next-line
+  validateInput();
+
+  // form.reset();
+});
 
 const mobileNav = document.querySelector('.mobile-nav');
 const hamburgerMenu = document.querySelector('.hamburger');
